@@ -1,0 +1,9 @@
+.carousel-item {
+    transition: transform 1s ease-in-out;
+}
+
+.slider-image {
+    height: 700px; /* İstediğiniz yükseklik */
+    object-fit: cover; /* En-boy oranını koruyarak taşıyor gibi gösterir */
+    object-position: center; /* Görselin orta kısmını odaklar */
+}

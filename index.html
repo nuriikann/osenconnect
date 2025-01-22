@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const browserLang = navigator.language.slice(0, 2); // Tarayıcı dilini al
+            const supportedLanguages = ['en', 'tr', 'ru'];
+            const savedLanguage = localStorage.getItem('preferredLanguage');
+            
+            const targetLang = savedLanguage || (supportedLanguages.includes(browserLang) ? browserLang : 'en');
+            window.location.href = `index-${targetLang}.html`;
+        });
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>

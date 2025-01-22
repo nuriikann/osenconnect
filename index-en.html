@@ -7,43 +7,24 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/style.css">
-    <style>
-        section {
-            padding: 100px 20px;
-            min-height: 100vh;
-        }
-        #home {
-            background-color: #f8f9fa;
-        }
-        #about {
-            background-color: #e9ecef;
-        }
-        #services {
-            background-color: #dee2e6;
-        }
-        #contact {
-            background-color: #ced4da;
-        }
-    </style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
 
     <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#home">Osen Connect</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Services</a>
@@ -85,14 +66,14 @@
                         <img src="./assets/images/M4T SAR KV (1).jpg" class="d-block w-100 slider-image" alt="Slide 2">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>About Our Services</h5>
-                            <p>We offer the best solutions tailored for you.</p>
+                            <p>We offer the best solutions specifically for you.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="./assets/images/Feature_Speaker (1).jpg" class="d-block w-100 slider-image" alt="Slide 3">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Contact Us Today</h5>
-                            <p>Let’s work together to achieve your goals.</p>
+                            <h5>Contact Us Now</h5>
+                            <p>Let's work together to achieve your goals.</p>
                         </div>
                     </div>
                 </div>
@@ -109,26 +90,136 @@
             </div>
         </div>
     </section>
-    
 
     <section id="about">
         <div class="container">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <h2 class="text-center mb-5">About Us</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card h-100 text-white bg-transparent">
+                        <div class="card-body">
+                            <h5 class="card-title">Our Vision</h5>
+                            <p class="card-text">To produce technological solutions that will add value to the world and to be a pioneer.</p>
+                            <img class="img-fluid" src="./assets/images/vectors/undraw_professor_d7zn.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card h-100 text-white bg-transparent">
+                        <div class="card-body">
+                            <h5 class="card-title">Our Mission</h5>
+                            <p class="card-text">To help our customers achieve their goals by providing the highest quality service.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card h-100 text-white bg-transparent">
+                        <div class="card-body">
+                            <h5 class="card-title">Our Values</h5>
+                            <p class="card-text">Commitment to innovation, transparency and customer satisfaction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Products</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card h-100 text-white bg-transparent">
+                        <div class="card-body">
+                            <h5 class="card-title">Matrice 4 Series</h5>
+                            <p class="card-text">To produce technological solutions that will add value to the world and to be a pioneer.</p>
+                            <img class="img-fluid" src="./assets/images/M4T SAR KV (1).jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card h-100 text-white bg-transparent">
+                        <div class="card-body">
+                            <h5 class="card-title">Our Mission</h5>
+                            <p class="card-text">To help our customers achieve their goals by providing the highest quality service.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card h-100 text-white bg-transparent">
+                        <div class="card-body">
+                            <h5 class="card-title">Our Values</h5>
+                            <p class="card-text">Commitment to innovation, transparency and customer satisfaction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="services">
         <div class="container">
-            <h2>Our Services</h2>
-            <p>We offer a variety of services to help you succeed.</p>
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row g-4" style="display: flex; flex-wrap: wrap; gap: 20px;">
+                <!-- Card 1 -->
+                <div class="col" style="flex: 1 1 calc(33% - 20px);">
+                    <div class="card text-white bg-transparent" style="backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                        <div class="card-body">
+                            <h5 class="card-title">Consulting</h5>
+                            <p class="card-text">We offer you special consultancy services with our expert team.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col" style="flex: 1 1 calc(50% - 20px);">
+                    <div class="card text-white bg-transparent" style="backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                        <div class="card-body">
+                            <h5 class="card-title">Technical Support</h5>
+                            <p class="card-text">Grow your business with our technical support team that is always by your side.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col" style="flex: 1 1 calc(25% - 20px);">
+                    <div class="card text-white bg-transparent" style="backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                        <div class="card-body">
+                            <h5 class="card-title">Education Services</h5>
+                            <p class="card-text">We provide professional training services to develop your workforce.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col" style="flex: 1 1 calc(40% - 20px);">
+                    <div class="card text-white bg-transparent" style="backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Management</h5>
+                            <p class="card-text">We support your projects from planning to completion.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col" style="flex: 1 1 calc(60% - 20px);">
+                    <div class="card text-white bg-transparent" style="backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                        <div class="card-body">
+                            <h5 class="card-title">Software Development</h5>
+                            <p class="card-text">We produce software solutions specific to your needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="contact">
         <div class="container">
-            <h2>Contact Us</h2>
-            <p>Feel free to get in touch with us.</p>
+            <h2>Contact</h2>
+            <p>Feel free to contact us.</p>
         </div>
     </section>
 

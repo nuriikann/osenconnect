@@ -4,35 +4,37 @@ section {
 }
 
 #navbar{
-    background-image: linear-gradient(90deg, #155696, #780a67);
+    background-image: linear-gradient(90deg, #0a4075, #780a67);
 }
 .navbar a{
     color: white !important;
 }
 #home {
-    background-image: linear-gradient(90deg, #155696, #780a67);
+    background-image: linear-gradient(90deg, #0a4075, #780a67);
 }
 #about {
-    background-image: linear-gradient(90deg, #155696, #780a67);
+    background-image: linear-gradient(90deg, #0a4075, #780a67);
     min-height: 50vh !important;
 }
 #about h2, p{
     color: white;
 }
 #products{
-    background-image: linear-gradient(90deg, #155696, #780a67);   
+    background-image: linear-gradient(90deg, #0a4075, #780a67);
+    min-height: 70vh !important;  
 }
 #products h2, p{
     color: white;
 }
 #services {
-    background-image: linear-gradient(90deg, #155696, #780a67);
+    background-image: linear-gradient(90deg, #0a4075, #780a67);
+    min-height: 50vh !important;
 }
 #services h2, p{
     color: white;
 }
 #contact {
-    background-image: linear-gradient(90deg, #155696, #780a67);
+    background-image: linear-gradient(90deg, #0a4075, #780a67);
 }
 #contact h2, p{
     color: white;
@@ -50,6 +52,10 @@ section {
 
 .carousel-item {
     transition: transform 1s ease-in-out;
+}
+
+.nav-item a:hover{
+    color: rgb(201, 103, 12) !important;
 }
 
 .slider-image {

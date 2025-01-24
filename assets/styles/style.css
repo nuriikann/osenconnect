@@ -1,17 +1,24 @@
+:root{
+    --borderColor1: #3acfd5;
+    --borderColor2: #3a4ed5;
+    --headerColor: #fff;
+    --aColor: #fff;
+    --aHoverColor: #3a4ed5;
+}
 section {
     padding: 100px 20px;
     min-height: 100vh;
 }
 
 .container h2{
-    color: white;
+    color: var(--headerColor);
 }
 
 #navbar{
     background-image: linear-gradient(90deg, #0a4075, #780a67);
 }
 .navbar a{
-    color: white !important;
+    color: var(--aColor) !important;
 }
 #home {
     background-image: linear-gradient(90deg, #0a4075, #780a67);
@@ -22,37 +29,66 @@ section {
     min-height: 50vh !important;
 }
 #about h2, p{
-    color: white;
+    color: var(--headerColor);
 }
 #products{
     background-image: linear-gradient(90deg, #0a4075, #780a67);
     min-height: 70vh !important;  
 }
 #products h2, p{
-    color: white;
+    color: var(--headerColor);
 }
 #services {
     background-image: linear-gradient(90deg, #0a4075, #780a67);
     min-height: 50vh !important;
 }
 #services h2, p{
-    color: white;
+    color: var(--headerColor);
 }
 #contact {
     background-image: linear-gradient(90deg, #0a4075, #780a67);
 }
 #contact h2, p{
-    color: white;
+    color: var(--headerColor);
 }
 
 #language-select{
     padding: 10px;
     background-color: #6e196e;
-    color: white;
+    color: var(--aColor);
     display: inline-block;
     margin: 0 0.5rem;
     animation: backInRight;
     animation-duration: 2s;
+    border: 1px solid;
+    border-image: linear-gradient(to right, var(--borderColor1) 0%, var(--borderColor2) 100%) 1 !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .heroSlider{
+        margin-top: 48px;
+        display: flex;
+        align-items: center;
+    }
+  }
+.heroSlider{
+    display: flex;
+    align-items: center;
+}
+#homeCarousel1{
+    z-index: 99;
+}
+
+.header1{
+    background-color: transparent;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 12px;
+    border-image: linear-gradient(to right, var(--borderColor1) 0%, var(--borderColor2) 100%) 1 !important;
+}
+
+.productSlider img{
+    max-height: 400px !important;
 }
 
 .moreBtn{
@@ -60,17 +96,33 @@ section {
     border: 1px solid white;
     padding: 5px;
     font-size: small;
+    transition: 200ms;
+   
+}
+.moreBtn:hover{
+    letter-spacing: 2px;
+    border: 1px solid;
+    border-image: linear-gradient(to right, var(--borderColor1) 0%, var(--borderColor2) 100%) 1 !important;
+    transition: 200ms;
 }
 .moreBtn a{
-    color: white;
+    color: var(--aColor);
     text-decoration: none !important;
 }
 .carousel-item {
     transition: transform 1s ease-in-out;
 }
 
+.nav-item{
+    color: var(--aColor);
+    transition: 200ms;
+}
 .nav-item a:hover{
-    color: rgb(201, 103, 12) !important;
+    scale: 1.1;
+    transition: 200ms;
+    /* background: -webkit-linear-gradient(0deg, #3acfd5, #3a4ed5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 
 .slider-image {
@@ -81,5 +133,29 @@ section {
 
 .card{
     backdrop-filter: blur(10px);
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid;
+    border-image: linear-gradient(to right, var(--borderColor1) 0%, var(--borderColor2) 100%) 1 !important;
 }
+
+.card-text{
+    word-spacing: 5px;
+}
+
+
+
+.hover {
+    border: 8px solid;
+    border-image: linear-gradient(to right, var(--borderColor1) 0%, var(--borderColor2) 100%) 1 !important;
+    -webkit-mask: 
+      conic-gradient(from 180deg at top 2px right 2px, #0000 90deg,#000 0)
+       var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
+      conic-gradient(at bottom 2px left  2px,  #0000 90deg,#000 0)
+       0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
+      linear-gradient(#000 0 0) padding-box no-repeat;
+    transition: .3s, -webkit-mask-position .3s .3s;
+
+  }
+  .hover:hover {
+    --_i: 100%;
+    transition: .3s, -webkit-mask-size .3s .3s;
+  }

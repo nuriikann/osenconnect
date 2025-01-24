@@ -50,49 +50,92 @@
 
     <!-- Sections -->
     <section id="home">
-        <div class="container text-center">
-            <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
-                <!-- Indicators/Dots -->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <h2 class="text-center mb-5">Ürünlerimiz</h2>
+                    <div class="row g-4" style="display: flex; flex-wrap: wrap; gap: 20px;">
+                        <!-- Card 1 -->
+                        <div class="col" style="flex: 1 1 calc(33% - 20px);">
+                            <div class="card text-white bg-transparent" style="backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dronlar</h5>
+                                    <p class="card-text">Dünyaya değer katacak teknolojik çözümler üretmek ve öncü olmak.</p>
+                                    <button class="moreBtn"><a href="#products">Devamını Gör -></a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="col" style="flex: 1 1 calc(50% - 20px);">
+                            <div class="card text-white bg-transparent" style="backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                                <div class="card-body">
+                                    <h5 class="card-title">Kapılar</h5>
+                                    <p class="card-text">Ürünlerimizi satın aldıktan sonra kurulumuna yardım ediyoruz.</p>
+                                    <button class="moreBtn"><a href="#products">Devamını Gör -></a></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 3 -->
+                        <div class="col" style="flex: 1 1 calc(60% - 20px);">
+                            <div class="card text-white bg-transparent" style="backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ev Lavobaları</h5>
+                                    <p class="card-text">Ürünlerimizi dünyanın her yerine özenle paketleme yapıldıktan sonra en hızlı şekilde sizlere ulaştırıyoruz.</p>
+                                    <button class="moreBtn"><a href="#products">Devamını Gör -></a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-    
-                <!-- Slides -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./assets/images/Feature_Drone+RC Plus (1).jpg" class="d-block w-100 slider-image" alt="Slide 1">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Matrice 4 Serisi</h5>
-                            <p>Hepsi bir arada çözümünüz.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./assets/images/M4T SAR KV (1).jpg" class="d-block w-100 slider-image" alt="Slide 2">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Hizmetlerimiz Hakkında</h5>
-                            <p>Size özel en iyi çözümleri sunuyoruz.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./assets/images/Feature_Speaker (1).jpg" class="d-block w-100 slider-image" alt="Slide 3">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Bizimle Hemen İletişime Geçin</h5>
-                            <p>Hedeflerinize ulaşmak için birlikte çalışalım.</p>
+                <div class="col-md-6 col-12 mt-5">
+                    <div class="container text-center">
+                        <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+                            
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                
+                            
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./assets/images/Feature_Drone+RC Plus (1).jpg" class="d-block w-100 slider-image" alt="Slide 1">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Matrice 4 Serisi</h5>
+                                        <p>Hepsi bir arada çözümünüz.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/images/M4T SAR KV (1).jpg" class="d-block w-100 slider-image" alt="Slide 2">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Hizmetlerimiz Hakkında</h5>
+                                        <p>Size özel en iyi çözümleri sunuyoruz.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/images/Feature_Speaker (1).jpg" class="d-block w-100 slider-image" alt="Slide 3">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Bizimle Hemen İletişime Geçin</h5>
+                                        <p>Hedeflerinize ulaşmak için birlikte çalışalım.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--Control buttons-->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
                 </div>
-    
-                <!-- Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </div>
     </section>

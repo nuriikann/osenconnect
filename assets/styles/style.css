@@ -3,6 +3,10 @@ section {
     min-height: 100vh;
 }
 
+.container h2{
+    color: white;
+}
+
 #navbar{
     background-image: linear-gradient(90deg, #0a4075, #780a67);
 }
@@ -11,6 +15,7 @@ section {
 }
 #home {
     background-image: linear-gradient(90deg, #0a4075, #780a67);
+    min-height: 50vh;
 }
 #about {
     background-image: linear-gradient(90deg, #0a4075, #780a67);
@@ -50,6 +55,16 @@ section {
     animation-duration: 2s;
 }
 
+.moreBtn{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 5px;
+    font-size: small;
+}
+.moreBtn a{
+    color: white;
+    text-decoration: none !important;
+}
 .carousel-item {
     transition: transform 1s ease-in-out;
 }

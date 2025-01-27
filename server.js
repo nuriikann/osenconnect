@@ -1,23 +1,41 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+const dotenv = require('dotenv');
+
+
 
 const app = express();
 const PORT = 3000;
 
+
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+dotenv.config();
 
 // Nodemailer için bağlantı ayarları
 const transporter = nodemailer.createTransport({
     host: "smtpout.secureserver.net", 
-    port: 587, 
-    secure: false,
+    port: 465, 
+    secure: true,
     auth: {
-        user: 'sales@osenconnect.com',
-        pass: 'Murat25Ozen.Can', // doğru şifrenizi buraya ekleyin
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS, // doğru şifrenizi buraya ekleyin
     },
+});
+
+// Start the server
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});
+
+transporter.verify((error, success) => {
+    if (error) {
+        console.log("SMTP connection error:", error);
+    } else {
+        console.log("SMTP server is ready to take messages.");
+    }
 });
 
 // Serve the form
@@ -47,7 +65,3 @@ app.post("/send-email", async (req, res) => {
     }
 });
 
-// Start the server
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-});

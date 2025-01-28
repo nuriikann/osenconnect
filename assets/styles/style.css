@@ -9,6 +9,47 @@ section {
     padding: 100px 20px;
     min-height: 100vh;
 }
+form{
+    justify-content: center;
+}
+
+form input{
+    height: 50px;
+    width: 50%;
+}
+
+form textarea{
+    width: 50%;
+}
+
+form label{
+    color: white;
+}
+
+form button{
+    background-color: transparent;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 12px;
+    border-image: linear-gradient(to right, var(--borderColor1) 0%, var(--borderColor2) 100%) 1 !important;
+    color: white;
+    transition: 200ms;
+    width: 200px;
+}
+
+form button:hover{
+    background-color: transparent;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 12px;
+    border-image: linear-gradient(to right, var(--borderColor1) 0%, var(--borderColor2) 100%) 1 !important;
+    color: white;
+    letter-spacing: 2px;
+    transition: 200ms;
+}
+.formDiv{
+    flex-direction: column;
+}
 
 .carousel-caption{
     background-color: #00000038;
@@ -74,6 +115,18 @@ section {
         margin-top: 48px;
         display: flex;
         align-items: center;
+    }
+    form{
+        justify-content: center;
+    }
+    
+    form input{
+        height: 50px;
+        width: 100%;
+    }
+    
+    form textarea{
+        width: 100%;
     }
   }
 .heroSlider{
@@ -164,3 +217,32 @@ section {
     --_i: 100%;
     transition: .3s, -webkit-mask-size .3s .3s;
   }
+
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Ekranın altından uzaklık */
+    right: 20px; /* Ekranın sağından uzaklık */
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50px; /* Yuvarlak köşeler */
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 1000; /* Önde görünmesini sağlar */
+    transition: transform 0.3s ease;
+}
+
+/* Hover efekti */
+.whatsapp-button:hover {
+    transform: scale(1.1); /* Butonu büyütür */
+}
+
+/* WhatsApp ikonunun tasarımı */
+.whatsapp-button img {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}

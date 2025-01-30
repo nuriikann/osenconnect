@@ -170,6 +170,19 @@ button:focus{
     form textarea{
         width: 100%;
     }
+    .moreBtn{
+        background-color: transparent;
+        border: 1px solid white;
+        padding: 5px;
+        font-size: small;
+        transition: 200ms;
+        display: inline-block !important;
+       
+    }
+    .moreBtn a{
+        color: var(--aColor);
+        text-decoration: none !important;
+    }
   }
 .heroSlider{
     display: flex;
@@ -197,7 +210,6 @@ button:focus{
     padding: 5px;
     font-size: small;
     transition: 200ms;
-   
 }
 .moreBtn:hover{
     letter-spacing: 2px;

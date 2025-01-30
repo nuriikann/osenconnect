@@ -5,6 +5,18 @@
     --aColor: #fff;
     --aHoverColor: #3a4ed5;
 }
+
+blockquote{
+    border-left: 1px solid white;
+}
+blockquote 
+h5{
+    color: #d8d8d8;
+}
+blockquote 
+p{
+    color: #b5b5b5;
+}
 section {
     padding: 100px 20px;
     min-height: 100vh;
@@ -46,6 +58,24 @@ form button:hover{
     color: white;
     letter-spacing: 2px;
     transition: 200ms;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus{
+    outline: none !important;
+}
+
+#name,
+#surname,
+#subject,
+#message{
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 12px;
+    border-image: linear-gradient(to right, var(--borderColor1) 0%, var(--borderColor2) 100%) 1 !important;
+    color: white;
 }
 
 .logo{
@@ -190,19 +220,15 @@ form button:hover{
 .nav-item a:hover{
     scale: 1.1;
     transition: 200ms;
-    /* background: -webkit-linear-gradient(0deg, #3acfd5, #3a4ed5);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
 }
 
 .slider-image {
-    height: 700px; /* İstediğiniz yükseklik */
-    object-fit: cover; /* En-boy oranını koruyarak taşıyor gibi gösterir */
-    object-position: center; /* Görselin orta kısmını odaklar */
+    height: 700px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .card{
-    backdrop-filter: blur(10px);
     border: 1px solid;
     border-image: linear-gradient(to right, var(--borderColor1) 0%, var(--borderColor2) 100%) 1 !important;
 }
@@ -232,27 +258,24 @@ form button:hover{
 
   .whatsapp-button {
     position: fixed;
-    bottom: 20px; /* Ekranın altından uzaklık */
-    right: 20px; /* Ekranın sağından uzaklık */
+    bottom: 20px;
+    right: 20px;
     background-color: #25D366;
     color: white;
     border: none;
     padding: 15px 20px;
-    border-radius: 50px; /* Yuvarlak köşeler */
+    border-radius: 50px;
     font-size: 16px;
     font-weight: bold;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    z-index: 1000; /* Önde görünmesini sağlar */
+    z-index: 1000;
     transition: transform 0.3s ease;
 }
-
-/* Hover efekti */
 .whatsapp-button:hover {
-    transform: scale(1.1); /* Butonu büyütür */
+    transform: scale(1.1);
 }
 
-/* WhatsApp ikonunun tasarımı */
 .whatsapp-button img {
     width: 25px;
     height: 25px;

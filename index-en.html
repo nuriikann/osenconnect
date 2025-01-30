@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Osen Connect</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/New Project.png">
+    <meta property="og:title" content="Osen Connect">
+    <meta property="og:description" content="Osen Connect Web Site">
+    <meta property="og:image" content="http://www.imamindan.com/assets/images/New%20Project.png">
+    <meta property="og:url" content="http://www.imamindan.com">
+    <meta property="og:type" content="website">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/style.css">
@@ -15,7 +21,7 @@
     <!-- Navbar -->
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand animate__animated animate__backInLeft" href="#home">Osen Connect</a>
+            <a class="navbar-brand animate__animated animate__backInLeft" href="#home"><img class="logo" src="./assets/images/New Project.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -48,63 +54,109 @@
 
     <!-- Sections -->
     <section id="home">
-        <div class="container text-center">
-            <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
-                <!-- Indicators/Dots -->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <h2 class="text-center mb-5 header1 animate__animated animate__backInUp">PRODUCTS</h2>
+                    <div class="row g-4" style="display: flex; flex-wrap: wrap; gap: 20px;">
+                        <!-- Card 1 -->
+                        <div class="col animate__animated animate__backInLeft" style="flex: 1 1 calc(33% - 20px);">
+                            <div class="card text-white bg-transparent" style="backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                                <div class="card-body">
+                                    <h5 class="card-title">Drons</h5>
+                                    <p class="card-text">Our state-of-the-art drones produce fast and effortless solutions.</p>
+                                    <button class="moreBtn"><a href="#products">See More -></a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="col animate__animated animate__backInDown" style="flex: 1 1 calc(50% - 20px);">
+                            <div class="card text-white bg-transparent" style="backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                                <div class="card-body">
+                                    <h5 class="card-title">Doors</h5>
+                                    <p class="card-text">After purchasing our products, we help you install them.</p>
+                                    <button class="moreBtn"><a href="#products">See More -></a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="col animate__animated animate__backInLeft" style="flex: 1 1 calc(60% - 20px);">
+                            <div class="card text-white bg-transparent" style="backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sinks</h5>
+                                    <p class="card-text">We deliver our products to you as quickly as possible after they are carefully packaged all over the world.</p>
+                                    <button class="moreBtn"><a href="#eviye">See More -></a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Card 4-->
+                        <div class="col animate__animated animate__backInUp" style="flex: 1 1 calc(60% - 20px);">
+                            <div class="card text-white bg-transparent" style="backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                                <div class="card-body">
+                                    <h5 class="card-title">Industrial Machinery</h5>
+                                    <p class="card-text">We deliver our products to you as quickly as possible after they are carefully packaged all over the world.</p>
+                                    <button class="moreBtn"><a href="#machine">See More -></a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-    
-                <!-- Slides -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./assets/images/Feature_Drone+RC Plus (1).jpg" class="d-block w-100 slider-image" alt="Slide 1">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Matrice 4 Series</h5>
-                            <p>Your all-in-one solution.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./assets/images/M4T SAR KV (1).jpg" class="d-block w-100 slider-image" alt="Slide 2">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>About Our Services</h5>
-                            <p>We offer the best solutions specifically for you.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./assets/images/Feature_Speaker (1).jpg" class="d-block w-100 slider-image" alt="Slide 3">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Contact Us Now</h5>
-                            <p>Let's work together to achieve your goals.</p>
+                <div class="col-md-6 col-12 heroSlider animate__animated animate__backInRight">
+                    <div class="container text-center">
+                        <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./assets/images/Drones/H20-6.jpg" class="d-block w-100 slider-image" alt="Slide 1">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Hercules 20 Series</h5>
+                                        <p>Your all-in-one drone solution.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/images/Doors/3_07460c6c-cb80-4bd8-8e67-e983bb02b089.jpg" class="d-block w-100 slider-image" alt="Slide 2">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Doors Manufactured with High Standards</h5>
+                                        <p>High quality doors produced for 8 different areas of use.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/images/Sinks/sink.webp" class="d-block w-100 slider-image" alt="Slide 3">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Change the Beauty Perception of Your Kitchen!</h5>
+                                        <p>Eco-friendly sinks made from different mineral stones.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Control buttons-->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
                 </div>
-    
-                <!-- Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </div>
     </section>
-
     <section id="about">
         <div class="container">
-            <h2 class="text-center mb-5">About Us</h2>
+            <h2 class="text-center mb-5 header1">ABOUT US</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <!-- Card 1 -->
                 <div class="col">
                     <div class="card h-100 text-white bg-transparent">
                         <div class="card-body">
                             <h5 class="card-title">Our Vision</h5>
-                            <p class="card-text">To produce technological solutions that will add value to the world and to be a pioneer.</p>
+                            <p class="card-text">Our vision is to bring high-quality, Turkey-origin products to the world, establish a strong brand in the global market with innovative solutions, and shape the future with our engineering expertise. By combining technology and quality, we strive for sustainable success.</p>
                             <img class="img-fluid" src="./assets/images/vectors/undraw_professor_d7zn.svg" alt="">
                         </div>
                     </div>
@@ -114,7 +166,8 @@
                     <div class="card h-100 text-white bg-transparent">
                         <div class="card-body">
                             <h5 class="card-title">Our Mission</h5>
-                            <p class="card-text">To help our customers achieve their goals by providing the highest quality service.</p>
+                            <p class="card-text">Prioritizing quality with fast shipping, reliable and long-term partnerships to maximize customer satisfaction. Leading the industry with innovative solutions and establishing a lasting presence in the global market through sustainable business models.</p>
+                            <img class="img-fluid" src="./assets/images/vectors/undraw_creation-process_uvp6.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -123,25 +176,66 @@
                     <div class="card h-100 text-white bg-transparent">
                         <div class="card-body">
                             <h5 class="card-title">Our Values</h5>
-                            <p class="card-text">Commitment to innovation, transparency and customer satisfaction.</p>
+                            <p class="card-text">With a corporate team culture, strong collaboration, our innovative company structure, and ethical values, we aim for sustainable success. We make a difference in the industry with our customer-focused approach and commitment to continuous improvement.</p>
+                            <img class="img-fluid" src="./assets/images/vectors/undraw_investing_kncz.svg" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <section id="products">
         <div class="container">
-            <h2 class="text-center mb-5">Our Products</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <h2 class="text-center mb-5 header1">PRODUCTS</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
                 <!-- Card 1 -->
                 <div class="col">
                     <div class="card h-100 text-white bg-transparent">
                         <div class="card-body">
-                            <h5 class="card-title">Matrice 4 Series</h5>
-                            <p class="card-text">To produce technological solutions that will add value to the world and to be a pioneer.</p>
-                            <img class="img-fluid" src="./assets/images/M4T SAR KV (1).jpg" alt="">
+                            <h5 class="card-title">Drones</h5>
+                            <p class="card-text">Our cutting-edge drones provide safe, fast and effortless solutions to your problems.</p>
+                            <div id="homeCarousel1" class="carousel slide" data-bs-ride="carousel1">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#homeCarousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#homeCarousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#homeCarousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item productSlider active">
+                                        <img src="./assets/images/Drones/H20-6.jpg" class="d-block w-100 slider-image" alt="Slide 1">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Matrice 4 Series</h5>
+                                            <p>Your all-in-one solution.</p>
+                                            <button class="mb-2 moreBtn"><a href="/dron-en.html">See More</a></button>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item productSlider">
+                                        <img src="./assets/images/Drones/H20-2 (1).jpg" class="d-block w-100 slider-image" alt="Slide 2">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>DRONE</h5>
+                                            <p>We offer the best solutions specifically for you.</p>
+                                            <button class="mb-2 moreBtn"><a href="/dron-tr.html">See More</a></button>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item productSlider">
+                                        <img src="./assets/images/Drones/H20-10 (1).jpg" class="d-block w-100 slider-image" alt="Slide 3">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>DRONE</h5>
+                                            <p>Let's work together to achieve your goals.</p>
+                                            <button class="mb-2 moreBtn"><a href="/dron-tr.html">See More</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Control buttons-->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel1" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel1" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -149,17 +243,143 @@
                 <div class="col">
                     <div class="card h-100 text-white bg-transparent">
                         <div class="card-body">
-                            <h5 class="card-title">Our Mission</h5>
+                            <h5 class="card-title">Doors</h5>
                             <p class="card-text">To help our customers achieve their goals by providing the highest quality service.</p>
+                            <div id="homeCarousel2" class="carousel slide" data-bs-ride="carousel2">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#homeCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#homeCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#homeCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item productSlider active">
+                                        <img src="./assets/images/Doors/3_07460c6c-cb80-4bd8-8e67-e983bb02b089.jpg" class="d-block w-100 slider-image" alt="Slide 1">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>DOOR</h5>
+                                            <p>Your all-in-one solution.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item productSlider">
+                                        <img src="./assets/images/Doors/dw_67777e89-44bc-4bb4-812b-81ab31e03512.png" class="d-block w-100 slider-image" alt="Slide 2">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>DOOR</h5>
+                                            <p>We offer the best solutions specifically for you.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item productSlider">
+                                        <img src="./assets/images/Doors/V-009_823cbebd-f99f-474e-a84f-d8c06dca9c7b-removebg-preview.png" class="d-block w-100 slider-image" alt="Slide 3">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>KAPI</h5>
+                                            <p>Let's work together to achieve your goals.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Control buttons-->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- Card 3 -->
-                <div class="col">
+                <div class="col" id="eviye">
                     <div class="card h-100 text-white bg-transparent">
                         <div class="card-body">
-                            <h5 class="card-title">Our Values</h5>
+                            <h5 class="card-title">SINKS</h5>
                             <p class="card-text">Commitment to innovation, transparency and customer satisfaction.</p>
+                            <div id="homeCarousel3" class="carousel slide" data-bs-ride="carousel3">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#homeCarousel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#homeCarousel3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#homeCarousel3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item productSlider active">
+                                        <img src="./assets/images/Sinks/sink.webp" class="d-block w-100 slider-image" alt="Slide 1">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>SINK</h5>
+                                            <p>Your all-in-one solution.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item productSlider">
+                                        <img src="./assets/images/Sinks/sink_2.webp" class="d-block w-100 slider-image" alt="Slide 2">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>SINK</h5>
+                                            <p>We offer the best solutions specifically for you.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item productSlider">
+                                        <img src="./assets/images/Sinks/sink_3.jpg" class="d-block w-100 slider-image" alt="Slide 3">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>SINK</h5>
+                                            <p>Let's work together to achieve your goals.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Control buttons-->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel3" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel3" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col" id="machine">
+                    <div class="card h-100 text-white bg-transparent">
+                        <div class="card-body">
+                            <h5 class="card-title">Industrial Machinery</h5>
+                            <p class="card-text">To produce technological solutions that will add value to the world and to be a pioneer.</p>
+                            <div id="homeCarousel4" class="carousel slide" data-bs-ride="carousel4">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#homeCarousel4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#homeCarousel4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#homeCarousel4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item productSlider active">
+                                        <img src="./assets/images/Machine/highSpeedPayOff3.jpg" class="d-block w-100 slider-image" alt="Slide 1">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>MACHINE</h5>
+                                            <p>Your all-in-one solution.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item productSlider">
+                                        <img src="./assets/images/Machine/pairingPayOff2.jpg" class="d-block w-100 slider-image" alt="Slide 2">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>MACHINE</h5>
+                                            <p>We offer the best solutions specifically for you.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item productSlider">
+                                        <img src="./assets/images/Machine/tangentialTaping5.jpg" class="d-block w-100 slider-image" alt="Slide 3">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>MACHINE</h5>
+                                            <p>Let's work together to achieve your goals.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Control buttons-->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel4" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel4" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -169,14 +389,14 @@
 
     <section id="services">
         <div class="container">
-            <h2 class="text-center mb-5">Our Services</h2>
+            <h2 class="text-center mb-5 header1">Our Services</h2>
             <div class="row g-4" style="display: flex; flex-wrap: wrap; gap: 20px;">
                 <!-- Card 1 -->
                 <div class="col" style="flex: 1 1 calc(33% - 20px);">
                     <div class="card text-white bg-transparent" style="backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
                         <div class="card-body">
-                            <h5 class="card-title">Consulting</h5>
-                            <p class="card-text">We offer you special consultancy services with our expert team.</p>
+                            <h5 class="card-title">Product Supply</h5>
+                            <p class="card-text">We deliver our products to all parts of the world quickly and safely.</p>
                         </div>
                     </div>
                 </div>
@@ -213,8 +433,31 @@
 
     <section id="contact">
         <div class="container">
-            <h2>Contact</h2>
-            <p>Feel free to contact us.</p>
+            <h2 class=" text-center header1">CONTACT</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12"></div>
+                        <p><a href="https://wa.me/+905312644000?text=Merhaba, yardımcı olur musunuz?" target="_blank" class="whatsapp-button">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                        </a></p><br>
+                        <form method="post" onsubmit="sendEmail(event)" >
+                            <label for="name">Name:</label><br>
+                            <input type="text" id="name" name="name" required><br><br>
+                        
+                            <label for="surname">Surname:</label><br>
+                            <input type="text" id="surname" name="surname" required><br><br>
+                    
+                            <label for="subject">Subject:</label><br>
+                            <input type="text" id="subject" name="subject" required><br><br>
+                    
+                            <label for="message">Message:</label><br>
+                            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                    
+                            <button type="submit" onclick="clearURL()">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -222,5 +465,27 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="language.js"></script>
+
+    <script>
+        function sendEmail(e) {
+            e.preventDefault(); 
+            const email = "sales@osenconnect.com";
+            const name = document.getElementById("name").value;
+            const surname = document.getElementById("surname").value;
+            const subject = document.getElementById("subject").value;
+            const message = document.getElementById("message").value;
+
+            
+            const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`İsim: ${name}\n\nSoyisim: ${surname}\n\nMesaj:\n${message}`)}`;
+            window.location.href = mailtoLink;
+            document.querySelector("form").reset();
+        }
+
+        function clearURL() {
+        setTimeout(() => {
+            window.history.replaceState(null, null, window.location.pathname);
+        }, 100);
+    }
+    </script>
 </body>
 </html>

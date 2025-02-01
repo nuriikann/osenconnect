@@ -1,11 +1,432 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Osen Connect - Drones</title>
+    <title>Osen Connect - Дроны</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/New Project.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+             <a class="animate__animated animate__backInLeft" href="/index-tr.html"><img class="logo" src="./assets/images/New Project.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto animate__animated animate__backInRight">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Главная страница</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Контакты</a>
+                    </li>
+                </ul>
+                <select id="language-select">
+                        <option value="en">English</option>
+                        <option value="tr">Türkçe</option>
+                        <option value="ru" selected>Русский</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <!--sections-->
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center mb-5 header1 animate__animated animate__backInUp">Hercules Серия</h2>
+                    <div class="row g-4" style="display: flex; flex-wrap: wrap; gap: 20px;">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col animate__animated animate__backInLeft" style="flex: 1 1 calc(33% - 20px);">
+                    <div class="card text-white bg-transparent" style="backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                        <div class="card-body container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3 class="card-title d-flex justify-content-center header1">HERCULES 10 SPRAY</h3>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <div id="droneCarousel1" class="carousel slide" data-bs-ride="carousel1">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#droneCarousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#droneCarousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#droneCarousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item productSlider active">
+                                                <img src="./assets/images/Drones/h10/H10 spray-1.jpg" class="d-block w-100 slider-image" alt="Slide 1">
+                                                <!-- <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Matrice 4 Serisi</h5>
+                                                    <p>Hepsi bir arada çözümünüz.</p>
+                                                </div> -->
+                                            </div>
+                                            <div class="carousel-item productSlider">
+                                                <img src="./assets/images/Drones/h10/H10 spray-2.jpg" class="d-block w-100 slider-image" alt="Slide 2">
+                                                <!-- <div class="carousel-caption d-none d-md-block">
+                                                    <h5>DRON</h5>
+                                                    <p>Size özel en iyi çözümleri sunuyoruz.</p>
+                                                </div> -->
+                                            </div>
+                                            <div class="carousel-item productSlider">
+                                                <img src="./assets/images/Drones/h10/H10 spray-5.jpg" class="d-block w-100 slider-image" alt="Slide 3">
+                                                <!-- <div class="carousel-caption d-none d-md-block">
+                                                    <h5>DRON</h5>
+                                                    <p>Hedeflerinize ulaşmak için birlikte çalışalım.</p>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <!--Control buttons-->
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#droneCarousel1" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#droneCarousel1" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <h3 class="header1 d-flex justify-content-center">Характеристики</h3>
+                                    <div class="mt-5">
+                                        <blockquote>
+                                            <h5 class="ms-2">Мощный</h5>
+                                            <p class="ms-2">Hercules 10 может поднимать груз до 7,5 кг и перевозить различные типы грузов.</p>
+                                        </blockquote>
+                                    </div>
+                                    <div class="mt-5">
+                                        <blockquote>
+                                            <h5 class="ms-2">Прочный</h5>
+                                            <p class="ms-2">Карбоновая рама и анодированные алюминиевые крепления делают Hercules 10 чрезвычайно прочным.</p>
+                                        </blockquote>
+                                    </div>
+                                    <div class="mt-5">
+                                        <blockquote>
+                                            <h5 class="ms-2">Лёгкий и компактный</h5>
+                                            <p class="ms-2">Съёмные 4 руки, шасси и грузоподъёмность делают Hercules 10 удобным для транспортировки.</p>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Card 2 -->
+                <div class="col animate__animated animate__backInLeft" style="flex: 1 1 calc(33% - 20px);">
+                    <div class="card text-white bg-transparent" style="backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                        <div class="card-body container">
+                            <div class="row">
+                                <!-- <div class="col-12">
+                                    <h3 class="card-title d-flex justify-content-center header1">HERCULES 10 SPRAY</h3>
+                                </div> -->
+                                <div class="col-md-6 mt-3">
+                                    <div id="droneCarousel2" class="carousel slide" data-bs-ride="carousel1">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#droneCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#droneCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#droneCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item productSlider active">
+                                                <img src="./assets/images/Drones/h10/H10 spray-3.jpg" class="d-block w-100 slider-image" alt="Slide 1">
+                                                <!-- <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Matrice 4 Serisi</h5>
+                                                    <p>Hepsi bir arada çözümünüz.</p>
+                                                </div> -->
+                                            </div>
+                                            <div class="carousel-item productSlider">
+                                                <img src="./assets/images/Drones/h10/H10 spray-4.jpg" class="d-block w-100 slider-image" alt="Slide 2">
+                                                <!-- <div class="carousel-caption d-none d-md-block">
+                                                    <h5>DRON</h5>
+                                                    <p>Size özel en iyi çözümleri sunuyoruz.</p>
+                                                </div> -->
+                                            </div>
+                                            <div class="carousel-item productSlider">
+                                                <img src="./assets/images/Drones/h10/H10 spray-1.jpg" class="d-block w-100 slider-image" alt="Slide 3">
+                                                <!-- <div class="carousel-caption d-none d-md-block">
+                                                    <h5>DRON</h5>
+                                                    <p>Hedeflerinize ulaşmak için birlikte çalışalım.</p>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <!--Control buttons-->
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#droneCarousel2" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#droneCarousel2" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <h3 class="header1 d-flex justify-content-center">Области применения</h3>
+                                    <div class="mt-5">
+                                        <blockquote>
+                                            <h5 class="ms-2">Очистка крыш</h5>
+                                        </blockquote>
+                                    </div>
+                                    <div class="mt-5">
+                                        <blockquote>
+                                            <h5 class="ms-2">Очистка поверхностей</h5>
+                                        </blockquote>
+                                    </div>
+                                    <div class="mt-5">
+                                        <blockquote>
+                                            <h5 class="ms-2">Очистка солнечных панелей</h5>
+                                        </blockquote>
+                                    </div>
+                                    <div class="mt-5">
+                                        <blockquote>
+                                            <h5 class="ms-2">Сельскохозяйственное опрыскивание</h5>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <!-- Card 3 -->
+                <div class="col animate__animated animate__backInLeft" style="flex: 1 1 calc(33% - 20px);">
+                    <div class="card text-white bg-transparent" style="backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                        <div class="card-body container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3 class="card-title d-flex justify-content-center header1">HERCULES 20</h3>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <div id="droneCarousel3" class="carousel slide" data-bs-ride="carousel1">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#droneCarousel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#droneCarousel3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#droneCarousel3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item productSlider active">
+                                                <img src="./assets/images/Drones/H20-10 (1).jpg" class="d-block w-100 slider-image" alt="Slide 1">
+                                                <!-- <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Matrice 4 Serisi</h5>
+                                                    <p>Hepsi bir arada çözümünüz.</p>
+                                                </div> -->
+                                            </div>
+                                            <div class="carousel-item productSlider">
+                                                <img src="./assets/images/Drones/H20-2 (1).jpg" class="d-block w-100 slider-image" alt="Slide 2">
+                                                <!-- <div class="carousel-caption d-none d-md-block">
+                                                    <h5>DRON</h5>
+                                                    <p>Size özel en iyi çözümleri sunuyoruz.</p>
+                                                </div> -->
+                                            </div>
+                                            <div class="carousel-item productSlider">
+                                                <img src="./assets/images/Drones/H20-6.jpg" class="d-block w-100 slider-image" alt="Slide 3">
+                                                <!-- <div class="carousel-caption d-none d-md-block">
+                                                    <h5>DRON</h5>
+                                                    <p>Hedeflerinize ulaşmak için birlikte çalışalım.</p>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <!--Control buttons-->
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#droneCarousel3" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#droneCarousel3" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <h3 class="header1 d-flex justify-content-center">Характеристики</h3>
+                                    <div class="mt-5">
+                                        <blockquote>
+                                            <h5 class="ms-2">Мощный</h5>
+                                            <p class="ms-2">Hercules 20 может поднимать до 33 фунтов (15 кг) и перевозить различные типы грузов.</p>
+                                        </blockquote>
+                                    </div>
+                                    <div class="mt-5">
+                                        <blockquote>
+                                            <h5 class="ms-2">Лёгкий и компактный</h5>
+                                            <p class="ms-2">Hercules 20 с четырьмя съёмными руками и шасси является ультракомпактным и удобным для транспортировки.</p>
+                                        </blockquote>
+                                    </div>
+                                    <div class="mt-5">
+                                        <blockquote>
+                                            <h5 class="ms-2">Стабильный</h5>
+                                            <p class="ms-2">Его конструкция обеспечивает отличную стабильность полета и устойчивость, независимо от груза.</p>
+                                        </blockquote>
+                                    </div>
+                                    <div class="mt-5">
+                                        <blockquote>
+                                            <h5 class="ms-2">Его конструкция обеспечивает отличную стабильность полета и устойчивость, независимо от груза.</h5>
+                                            <p class="ms-2">Карбоновая рама и анодированные алюминиевые крепления делают Hercules 20 чрезвычайно прочным.</p>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!--Card 4-->
+                <div class="col animate__animated animate__backInLeft" style="flex: 1 1 calc(33% - 20px);">
+                    <div class="card text-white bg-transparent" style="backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                        <div class="card-body container">
+                            <div class="row">
+                                <!-- <div class="col-12">
+                                    <h3 class="card-title d-flex justify-content-center header1">HERCULES 20</h3>
+                                </div> -->
+                                <div class="col-md-6 mt-3">
+                                    <div id="droneCarousel4" class="carousel slide" data-bs-ride="carousel1">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#droneCarousel4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#droneCarousel4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#droneCarousel4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item productSlider active">
+                                                <img src="./assets/images/Drones/MAR02597 (1).jpg" class="d-block w-100 slider-image" alt="Slide 1">
+                                                <!-- <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Matrice 4 Serisi</h5>
+                                                    <p>Hepsi bir arada çözümünüz.</p>
+                                                </div> -->
+                                            </div>
+                                            <div class="carousel-item productSlider">
+                                                <img src="./assets/images/Drones/MAR02618 (1).jpg" class="d-block w-100 slider-image" alt="Slide 2">
+                                                <!-- <div class="carousel-caption d-none d-md-block">
+                                                    <h5>DRON</h5>
+                                                    <p>Size özel en iyi çözümleri sunuyoruz.</p>
+                                                </div> -->
+                                            </div>
+                                            <div class="carousel-item productSlider">
+                                                <img src="./assets/images/Drones/MAR03031 (1).jpg" class="d-block w-100 slider-image" alt="Slide 3">
+                                                <!-- <div class="carousel-caption d-none d-md-block">
+                                                    <h5>DRON</h5>
+                                                    <p>Hedeflerinize ulaşmak için birlikte çalışalım.</p>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <!--Control buttons-->
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#droneCarousel4" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#droneCarousel4" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <h3 class="header1 d-flex justify-content-center">Области применения</h3>
+                                    <div class="mt-5">
+                                        <blockquote>
+                                            <h5 class="ms-2">Установка электрических линий</h5>
+                                        </blockquote>
+                                    </div>
+                                    <div class="mt-5">
+                                        <blockquote>
+                                            <h5 class="ms-2">Перевозка тяжёлых грузов</h5>
+                                        </blockquote>
+                                    </div>
+                                    <div class="mt-5">
+                                        <blockquote>
+                                            <h5 class="ms-2">Картография / Топография</h5>
+                                        </blockquote>
+                                    </div>
+                                    <div class="mt-5">
+                                        <blockquote>
+                                            <h5 class="ms-2">Автономное распыление</h5>
+                                        </blockquote>
+                                    </div>
+                                    <div class="mt-5">
+                                        <blockquote>
+                                            <h5 class="ms-2">Инспекция</h5>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2 class=" text-center header1">Контакты</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12"></div>
+                        <p><a href="https://wa.me/+905312644000?text=Здравствуйте, вы можете помочь?" target="_blank" class="whatsapp-button">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                        </a></p><br>
+                        <form method="post" onsubmit="sendEmail(event)" >
+                            <label for="name">Имя:</label><br>
+                            <input type="text" id="name" name="name" required><br><br>
+                        
+                            <label for="surname">Фамилия:</label><br>
+                            <input type="text" id="surname" name="surname" required><br><br>
+                    
+                            <label for="subject">Тема:</label><br>
+                            <input type="text" id="subject" name="subject" required><br><br>
+                    
+                            <label for="message">Сообщение:</label><br>
+                            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                    
+                            <button type="submit" onclick="clearURL()">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="languageTwo.js"></script>
+    <script>
+        function sendEmail(e) {
+            e.preventDefault(); 
+            const email = "sales@osenconnect.com";
+            const name = document.getElementById("name").value;
+            const surname = document.getElementById("surname").value;
+            const subject = document.getElementById("subject").value;
+            const message = document.getElementById("message").value;
+
+            
+            const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`İsim: ${name}\n\nSoyisim: ${surname}\n\nMesaj:\n${message}`)}`;
+            window.location.href = mailtoLink;
+            document.querySelector("form").reset();
+        }
+
+        function clearURL() {
+        setTimeout(() => {
+            window.history.replaceState(null, null, window.location.pathname);
+        }, 100);
+    }
+    </script>
+    <script>
     
+    document.addEventListener("DOMContentLoaded", function() {
+        let myCarousel = new bootstrap.Carousel(document.querySelector("#droneCarousel"), {
+            interval: 3000,
+            wrap: true
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

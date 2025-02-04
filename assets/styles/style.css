@@ -4,6 +4,11 @@
     --headerColor: #fff;
     --aColor: #fff;
     --aHoverColor: #3a4ed5;
+    --dronesPcolor: #b5b5b5;
+}
+
+hr{
+    color: white;
 }
 
 blockquote{
@@ -27,7 +32,7 @@ form{
 
 form input{
     height: 50px;
-    width: 50%;
+    width: 100%;
 }
 
 form textarea{
@@ -122,8 +127,11 @@ button:focus{
     background-image: linear-gradient(90deg, #0a4075, #780a67);
     min-height: 50vh !important;
 }
-#services h2, p{
+#services h2{
     color: var(--headerColor);
+}
+#services p{
+    color: var(--dronesPcolor);
 }
 #contact {
     background-image: linear-gradient(90deg, #0a4075, #780a67);
@@ -183,6 +191,18 @@ button:focus{
         color: var(--aColor);
         text-decoration: none !important;
     }
+    .bottomDiv{
+        margin-top: 75px;
+    }
+    .card2 img{
+        max-width: 35% !important;
+        max-height: 35% !important;
+    }
+    .card2{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
   }
 .heroSlider{
     display: flex;
@@ -194,10 +214,10 @@ button:focus{
 
 .header1{
     background-color: transparent;
-    border: 1px solid;
+    /* border: 1px solid; */
     padding: 10px;
-    border-radius: 12px;
-    border-image: linear-gradient(to right, var(--borderColor1) 0%, var(--borderColor2) 100%) 1 !important;
+    /* border-radius: 12px;
+    border-image: linear-gradient(to right, var(--borderColor1) 0%, var(--borderColor2) 100%) 1 !important; */
 }
 
 .productSlider img{
@@ -241,8 +261,9 @@ button:focus{
 }
 
 .card{
-    border: 1px solid;
-    border-image: linear-gradient(to right, var(--borderColor1) 0%, var(--borderColor2) 100%) 1 !important;
+    /* border: 1px solid;
+    border-image: linear-gradient(to right, var(--borderColor1) 0%, var(--borderColor2) 100%) 1 !important; */
+    border: none !important;
 }
 
 .card-text{
@@ -292,4 +313,27 @@ button:focus{
     width: 25px;
     height: 25px;
     vertical-align: middle;
+}
+
+.bottomDiv h6{
+    color:white;
+    text-decoration: none;
+    font-size: larger;
+}
+.bottomDiv a{
+    color: #aaa8a8;
+    text-decoration: none !important;
+    font-size: 14px;
+}
+.bottomDiv h4{
+    color: var(--aColor);
+}
+
+.card2 img{
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.card-text{
+    color: var(--dronesPcolor);
 }
